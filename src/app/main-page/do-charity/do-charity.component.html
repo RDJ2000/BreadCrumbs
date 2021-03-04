@@ -11,13 +11,18 @@
       </ion-item>
       <ion-item>
         <ion-label position="floating">Pick Up Time</ion-label>
-        <ion-datetime></ion-datetime>
+        <ion-datetime display-format="HH:mm"></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Pickup Address</ion-label>
         <ion-input></ion-input>
       </ion-item>
-      
+      <ion-item>
+           <ion-button (click)="location()"   shape="round" >
+          Live Location
+        </ion-button>
+      </ion-item>
+      <div id="mapid" style="height : 190px;"></div>
     </ion-card-content>
   </ion-card>
   <ion-button expand="expand" >Submit</ion-button>

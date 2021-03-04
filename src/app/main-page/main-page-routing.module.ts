@@ -25,8 +25,8 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'main-page/doCharity',
-        pathMatch: 'full'
+        redirectTo: 'doCharity',
+       
       }
     ]
     
