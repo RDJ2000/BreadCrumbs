@@ -6,17 +6,18 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating">Quantity of Food</ion-label>
-        <ion-input></ion-input>
+        <ion-label position="floating" >Quantity of Food</ion-label>
+        <ion-input [(ngModel)]='Quantity'></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Pick Up Time</ion-label>
-        <ion-datetime display-format="HH:mm"></ion-datetime>
+        <ion-datetime display-format="HH:mm" [(ngModel)]='timeOfPickup'></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Pickup Address</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]='Quantity'></ion-input>
       </ion-item>
+      <small>OR</small>
       <ion-item>
            <ion-button (click)="location()"   shape="round" >
           Live Location
